@@ -78,7 +78,7 @@ async def main():
     fastapi_thread = Thread(target=run_fastapi)
     fastapi_thread.start()
 
-    # Запуск бота
+    # Запуск бота в асинхронном режиме
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
